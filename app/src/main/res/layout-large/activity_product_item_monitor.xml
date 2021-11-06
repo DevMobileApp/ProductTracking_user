@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_img"
+    android:id="@+id/create_product_layout"
+    tools:context=".Product_item_monitor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/projectlogo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/logo"
+            android:text="Food Tracking Customer"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/scanner_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/scan"
+            android:onClick="Scan_QRCode"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/ful_detail_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:padding="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="VSS Shop"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/product_describ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/productname"
+            android:text="Maagi rich Tomato"
+            android:textColor="#000"
+            android:textSize="15dp"
+          android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/product_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_describ"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/producted_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_describ"
+                android:text="ProductDescribtion"
+                android:textColor="#000"
+                android:textSize="15dp"
+              />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/producted_in"
+                android:text="Product Price"
+                android:textColor="#000"
+                android:textSize="15dp"
+              />
+
+            <TextView
+                android:id="@+id/Quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/producted_in"
+                android:text="Quantity"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/Category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/producted_in"
+                android:text="Category"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_describ"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/product_label"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/producted_in_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_describ"
+                android:text="ProductDescribtion"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/Product_Price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/producted_in"
+                android:text="Product Price"
+                android:textColor="#000"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/Quantity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/producted_in"
+                android:text="Quantity"
+                android:textColor="#000"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/producted_in"
+                android:text="category"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dynamin_textview_manufac_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_label"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+
+
+
+
+            </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/product"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+        <com.example.producttracking.NonScrollListView
+        android:id="@+id/itemlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="#fff"
+        android:divider="@null">
+    </com.example.producttracking.NonScrollListView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

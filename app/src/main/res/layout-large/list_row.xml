@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+   >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/date_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="21/02/2020"
+        android:textColor="#000"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/time_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_txt"
+        android:layout_marginTop="3dp"
+        android:text="21/02/2020"
+        android:textColor="#000"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/circle"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/circle_textview"/>
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Product1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/id_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+       <View
+           android:layout_width="3dp"
+           android:layout_height="match_parent"
+           android:backgroundTint="#000"
+           android:layout_marginLeft="13dp"
+           android:background="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/product" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="UserName"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Phone_no"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Phone_no"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+
+            />
+
+
+        <!--so our layout is set-->
+
+    </LinearLayout>
+   </LinearLayout>
+</LinearLayout>
+</LinearLayout>

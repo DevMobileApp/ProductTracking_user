@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:orientation="vertical"
+    tools:context=".manufactory_user">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/projectlogo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/logo"
+            android:text="Food Tracking"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/add_manufactory_item"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/add"
+            android:layout_alignParentRight="true"
+            android:onClick="add_item"/>
+
+        <ImageView
+            android:id="@+id/scanner_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/add_manufactory_item"
+            android:src="@drawable/scan"
+            android:onClick="scnner"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/manufactory_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="username"
+            android:textColor="#000"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/user_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="username"
+            android:textColor="#000"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/non_manufactory_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="publish your product"
+            android:gravity="center"
+           android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/QRcode_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Qrcode"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+
+        <EditText
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="#fff"
+            android:hint="Product Name"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/product_details"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="#fff"
+            android:hint="Product Details"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/product_location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="#fff"
+            android:hint="Product Location"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_cornor"
+            android:onClick="update_product_non_manufac"
+            android:text=" Submit "
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
